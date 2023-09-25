@@ -20,7 +20,7 @@ const GoToTop = () => {
 
   return (
 
-      <button onClick={handleGoToTop} className={`z-50 fixed bottom-5 right-5 opacity-50 hover:opacity-100 transition duration-500 btn border-none bg-orange-500 hover:bg-orange-700 hover:text-white font-bold rounded-full ${showButton ? 'inline-block' : 'hidden'}`}>
+      <button onClick={handleGoToTop} className={`z-50 fixed bottom-5 right-5 opacity-50 hover:opacity-100 transition duration-500 btn border-none bg-primary-main hover:bg-primary-main font-bold rounded-full ${showButton ? 'inline-block' : 'hidden'}`}>
         <FaArrowUp></FaArrowUp>
       </button>
   );
