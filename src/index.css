@@ -44,3 +44,8 @@ select:focus-visible {
   .rounded-ball{
    @apply  h-4 w-4 bg-primary-main rounded-full
   }
+
+  /* common section banner */
+  .commonSectionBanner{
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); /* Rounded bottom using clip-path */
+  }

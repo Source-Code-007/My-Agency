@@ -1,5 +1,5 @@
 import '../auth.css'
-import logo1 from '../../../assets/logo-1.png'
+import logo1 from '/public/assets/img/logo.png'
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -66,7 +66,7 @@ const Signup = () => {
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-5 py-6 px-4">
                 <form className='space-y-5 md:space-y-7 px-4 pt-0 md:pt-8 lg:pt-14' onSubmit={handleSubmit(handleSignupFunc)}>
-                    <h2> <Link to={'/'}><img src={logo1} alt="" /></Link></h2>
+                <h2 className='flex items-center gap-3 my-subtitle text-white'> <Link to={'/'}><img src={logo1} className='h-10 w-10' alt="" /></Link> Agency</h2>
                     <h2 className='my-subtitle text-white'> Create your account</h2>
 
                     <div className='flex flex-col md:flex-row items-center gap-4'>

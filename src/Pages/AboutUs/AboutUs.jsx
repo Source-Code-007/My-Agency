@@ -1,3 +1,5 @@
+import CommonSectionBanner from "../../Components/HelpingComponent/CommonSectionBanner";
+import aboutUsBg from '/public/assets/img/banner-bg/about-us-bg.jpg'
 
 
 const AboutUs = () => {
@@ -5,8 +7,8 @@ const AboutUs = () => {
 
     return (
         <div>
-          
-          This is about us page!
+         <CommonSectionBanner title={'About Company'} bgImg={aboutUsBg}/> 
+         
 
         </div>
     );

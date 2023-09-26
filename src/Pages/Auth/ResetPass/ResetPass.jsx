@@ -1,5 +1,5 @@
 import '../auth.css'
-import logo1 from '../../../assets/logo-1.png'
+import logo1 from '/public/assets/img/logo.png'
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -61,7 +61,7 @@ const ResetPass = () => {
             <div className="col-span-12 md:col-span-6 lg:col-span-5 py-6 px-4 flex items-center md:items-start">
 
                 {!resetEmailSuccess ? <form className='space-y-5 md:space-y-7 px-4 pt-0 md:pt-8 lg:pt-32 md:pr-28 lg:pr-32' onSubmit={handleSubmit(handleResetPassFunc)}>
-                    <h2> <Link to={'/'}><img src={logo1} alt="" /></Link></h2>
+                <h2 className='flex items-center gap-3 my-subtitle text-white'> <Link to={'/'}><img src={logo1} className='h-10 w-10' alt="" /></Link> Agency</h2>
                     <h2 className='my-subtitle text-white'>Reset Your Password</h2>
                     <p className='text-slate-200 pr-10'>Enter the email address that you wish to reset the password for and we{"'"}ll send you an email with the instructions</p>
 

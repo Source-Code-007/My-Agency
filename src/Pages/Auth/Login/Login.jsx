@@ -1,11 +1,11 @@
 import '../auth.css'
-import logo1 from '../../../assets/logo-1.png'
+import logo1 from '/public/assets/img/logo.png'
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaApple, FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa';
-import signinLoadingLottie from '/public/assets/assets/lottie/successfully-registration-lottie.json'
-import signinLottie from '/public/assets/assets/lottie/signin-lottie.json'
+import signinLoadingLottie from '/public/assets/lottie/successfully-registration-lottie.json'
+import signinLottie from '/public/assets/lottie/signin-lottie.json'
 import Lottie from 'lottie-react';
 
 
@@ -51,7 +51,7 @@ const Login = () => {
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-5 py-6 px-4">
                 <form className='space-y-5 md:space-y-7 px-4 pt-0 md:pt-8 lg:pt-14' onSubmit={handleSubmit(handleSigninFunc)}>
-                    <h2> <Link to={'/'}><img src={logo1} alt="" /></Link></h2>
+                <h2 className='flex items-center gap-3 my-subtitle text-white'> <Link to={'/'}><img src={logo1} className='h-10 w-10' alt="" /></Link> Agency</h2>
                     <h2 className='my-subtitle text-white'> Login to your account</h2>
 
 
@@ -96,7 +96,7 @@ const Login = () => {
                     </div>
                     <button className="authBtn w-full flex items-center justify-center"><FaGoogle className="mr-2"></FaGoogle> Continue with Google</button>
                     <button className="authBtn w-full flex items-center justify-center"><FaApple className="mr-2"></FaApple> Continue with Apple</button>
-                    <p className="text-sm font-light text-slate-300 text-center"> Don{"'"}t have an account? <Link to="/sign-up" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Signup</Link></p>
+                    <p className="text-sm font-light text-slate-300 text-center"> Don{"'"}t have an account? <Link to="/signup" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Signup</Link></p>
                 </form>
             </div>
         </div>

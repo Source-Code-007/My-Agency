@@ -16,8 +16,8 @@ const HeroSection = () => {
                     <h2 className='my-banner-title'>We Offer You <span className='text-primary-main'>A <br /> Digital</span> <span className="inline-flex items-center gap-3"><span>Platform</span><span className="rounded-ball lg:mt-3"></span></span></h2>
                     <p className='text-para-1 pr-14 lg:pr-24 text-lg'>Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Nisl purus in mollis nunc sed id sempe egestas quis ips. </p>
                     <div className="inline-flex gap-3 items-center font-semibold text-primary-main relative pl-16 cursor-pointer group hover:pl-0 hover:pr-16 transition-all duration-500">
-                        <hr  className="h-px w-14 bg-para-2 opacity-70 absolute left-0 top-1/2 -translate-y-1/2 visible group-hover:invisible group-hover:opacity-0"/>
-                        <hr  className="h-px w-14 bg-para-2 absolute right-0 top-1/2 -translate-y-1/2 invisible opacity-0 group-hover:opacity-70 group-hover:visible"/>
+                        <hr  className="h-px w-14 bg-para-2 opacity-70 absolute left-0 top-1/2 -translate-y-1/2 visible group-hover:invisible group-hover:opacity-0 duration-500"/>
+                        <hr  className="h-px w-14 bg-para-2 absolute right-0 top-1/2 -translate-y-1/2 invisible opacity-0 group-hover:opacity-70 group-hover:visible duration-500"/>
                         <span className="rounded-ball !h-2 !w-2"></span>
                         <span className="">Get Started</span>
                     </div>

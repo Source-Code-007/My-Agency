@@ -6,6 +6,8 @@ import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx'
 import LayoutOne from './Layout/LayoutOne.jsx'
 import Homepage from './Pages/Homepage/Homepage.jsx'
 import AboutUs from './Pages/AboutUs/AboutUs.jsx'
+import Signup from './Pages/Auth/Signup/Signup'
+import Login from './Pages/Auth/Login/Login'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: '/about-us',
         element: <AboutUs />
+      },
+      {
+        path: '/signup',
+        element: <Signup />
+      },
+      {
+        path: '/login',
+        element: <Login />
       },
     ]
   },

@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import lottieLoading from '/public/assets/lottie/My-Planner-Lottie.json'
+import lottieLoading from '/public/assets/lottie/my-loading.json'
 
 const MyLoading = ({className, loop}) => {
     return (
