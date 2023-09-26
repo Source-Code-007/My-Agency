@@ -3,6 +3,7 @@ import logo from '/public/assets/img/logo.png'
 import { motion } from "framer-motion"
 import ActiveLink from "../../Components/HelpingComponent/ActiveLink";
 import MyLoading from "../../Components/HelpingComponent/MyLoading";
+import { Link } from "react-router-dom";
 
 
 const Nav = () => {
@@ -35,7 +36,7 @@ const Nav = () => {
 
 
 
-        <nav className={`navbar px-8 bg-slate-900 transition duration-500 shadow ${isTop ? 'bg-opacity-40' : 'bg-opacity-90'} fixed z-50`}>
+        <nav className={`navbar px-8 bg-dark-1 transition duration-500 shadow ${isTop ? 'bg-opacity-100' : 'bg-opacity-90'} fixed z-50`}>
             <div className="navbar-start w-fit md:w-3/6">
                 {/* Mobile menu */}
                 <div className="dropdown">
@@ -69,7 +70,9 @@ const Nav = () => {
             </div>
             <div className="navbar-end w-full md:w-3/6">
 
-
+                                        <Link to='/signup' className="common-btn">
+                                            Signup
+                                        </Link>
                 {/* {
                     authLoading ? <MyLoading></MyLoading> : user ? <>
                         <motion.div

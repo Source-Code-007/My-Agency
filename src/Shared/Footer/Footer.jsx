@@ -5,6 +5,7 @@ import logo from '/public/assets/img/logo.png'
 import MyMotion from "../../Components/HelpingComponent/MyMotion";
 
 const Footer = () => {
+
     return (
         <footer className='bg-center bg-cover bg-blend-overlay bg-slate-900 bg-fixed' style={{ backgroundImage: `url(${footerBg})` }}>
 
@@ -56,7 +57,7 @@ const Footer = () => {
             </div>
 
             <div className='text-center border-t border-t-slate-800 text-slate-300'>
-                <p className='py-6 font-bold'>Copyright © 2023 - All right reserved by <span className="text-primary-main text-lg">WizCraft Academy</span></p>
+                <p className='py-6 font-bold'>Copyright © 2023 - All right reserved by <span className="text-primary-main text-lg">My Agency</span></p>
             </div>
         </footer>
     );

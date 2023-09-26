@@ -14,7 +14,7 @@ const LayoutOne = () => {
             <DynamicTitle>
                 <FromTop>
                     <Nav></Nav>
-                    <div className='min-h-[calc(100vh-60px)] bg-red-300 mt-[68px]'>
+                    <div className='min-h-[calc(100vh-60px)] bg-dark-1 mt-[64px] lg:mt-[68px]'>
                         <Outlet></Outlet>
                     </div>
                     <Footer></Footer>

@@ -1,0 +1,49 @@
+*,
+*:focus{outline: none}
+
+
+/* common class */
+.authBtn {
+    @apply font-bold text-base bg-[#FFC00026] hover:bg-primary-main rounded-lg py-[16px] px-[20px] text-[#FFC000] hover:text-white leading-[19.5px] transition-all duration-300 ease-in-out
+  }
+
+  .authInp{
+    @apply block w-full p-3 bg-dark-3 text-slate-200 placeholder:text-slate-600 shadow-inner shadow-slate-800 border-none rounded focus:outline-none
+}
+
+.form-item{
+  position: relative;
+}
+
+.form-item input:focus{
+  border-color: blue
+}
+.form-item label{
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background: 49658A;
+  padding: 0 10px;
+  color: #c6c5c5;
+  transition: all .3s ease
+}
+.form-item input:focus + label,
+.form-item input:valid + label{
+  font-size: 11px;
+  top: -7px
+}
+.form-item input:focus + label{
+  color: #fff
+}
+
+/* verification input */
+.vi__wrapper{
+    width: 100% !important;
+}
+.vi__container{
+    width: 100% !important;
+}

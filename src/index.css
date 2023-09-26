@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*, body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* prevent all select tag focus visible outline */
+select:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+  
+  /* hide number arrow */
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+
+  /* Common style */
+  .my-container{
+    @apply max-w-[1440px] mx-auto px-2 sm:px-3 md:px-[60px]
+  }
+  
+  .my-banner-title {
+    @apply font-bold text-3xl md:text-4xl xl:text-7xl
+  }
+  
+  .my-title {
+    @apply font-bold text-xl md:text-2xl xl:text-3xl
+  }
+  
+  .my-subtitle {
+    @apply font-semibold text-lg md:text-xl xl:text-2xl
+  }
+  
+  .common-btn {
+    @apply font-bold text-lg border border-[#FFC000] bg-[#FFC000] hover:bg-transparent hover:text-white rounded py-[12px] px-[18px] text-black leading-[19.5px] transition-all duration-300 ease-in-out
+  }
+
+
+  .rounded-ball{
+   @apply  h-4 w-4 bg-primary-main rounded-full
+  }
