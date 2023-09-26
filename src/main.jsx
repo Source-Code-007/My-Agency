@@ -8,6 +8,8 @@ import Homepage from './Pages/Homepage/Homepage.jsx'
 import AboutUs from './Pages/AboutUs/AboutUs.jsx'
 import Signup from './Pages/Auth/Signup/Signup'
 import Login from './Pages/Auth/Login/Login'
+import Services from './Pages/Services/Services'
+import Vision from './Pages/Vision/Vision'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: '/about-us',
         element: <AboutUs />
+      },
+      {
+        path: '/services',
+        element: <Services />
+      },
+      {
+        path: '/vision',
+        element: <Vision />
       },
       {
         path: '/signup',

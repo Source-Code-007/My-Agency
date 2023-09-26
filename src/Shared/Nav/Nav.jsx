@@ -28,6 +28,7 @@ const Nav = () => {
 
             <li><ActiveLink to={'/'}>Home</ActiveLink></li>
             <li><ActiveLink to={'/about-us'}>About us</ActiveLink></li>
+            <li><ActiveLink to={'/services'}>Services</ActiveLink></li>
             <li><ActiveLink to={'/vision'}>Vision</ActiveLink></li>
 
         </>
