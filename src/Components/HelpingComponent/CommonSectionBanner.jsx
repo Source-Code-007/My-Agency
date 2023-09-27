@@ -3,6 +3,7 @@ import { FaAngleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import commonBg from '/public/assets/img/banner-bg/about-us-bg.jpg'
 
+
 const CommonSectionBanner = ({title, bgImg}) => {
     return (
         <div className='bg-slate-900 text-white commonSectionBanner bg-cover bg-center bg-blend-overlay' style={{backgroundImage: `url(${bgImg || commonBg})`}}>
